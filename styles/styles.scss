@@ -116,11 +116,16 @@ body {
   padding: 22rem 0rem 24rem 0rem;
 
   .det-row {
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.059);
+    }
+
     &:not(:last-child) {
       border-bottom: 2px solid rgba(211, 211, 211, 0.259);
     }
     font-size: 3rem;
-
+    background-color: transparent;
+    transition: all 0.2s;
     display: flex;
     align-items: center;
     // margin-bottom: 3rem;
@@ -212,6 +217,12 @@ body {
       margin-bottom: 3rem;
     }
   }
+}
+
+#sponsors {
+  background-color: $color-primary;
+  padding: 10rem 0rem;
+  color: white;
 }
 
 .pf {
