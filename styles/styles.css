@@ -39,6 +39,7 @@ body {
 
 #speakers-section {
   background-color: #c9d1de;
+  padding-top: 10rem;
 }
 
 #speakers-section .container {
@@ -118,7 +119,7 @@ body {
   background-color: #0c1d39;
   margin-top: -10rem;
   color: white;
-  padding: 22rem 0rem 22rem 0rem;
+  padding: 22rem 0rem 24rem 0rem;
 }
 
 #agenda-section .det-row {
@@ -161,12 +162,14 @@ body {
 }
 
 #summary {
-  margin: -15rem;
+  z-index: 5;
+  position: relative;
+  margin: -16rem 0rem -16rem 0rem;
 }
 
 #summary .container {
   background-color: white;
-  padding: 5rem;
+  padding: 2rem 5rem;
 }
 
 #summary .container .summary {
@@ -206,6 +209,34 @@ body {
 #summary .container .summary div .title {
   color: #919191;
   font-size: 3rem;
+}
+
+#location {
+  height: 80vh;
+  position: relative;
+  background-color: #c9d1de;
+  z-index: 3;
+}
+
+#location div.img-div {
+  background-image: url("../img/BuildingImg.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+#location .inner {
+  padding: 15rem;
+}
+
+#location .inner p {
+  display: block;
+}
+
+#location .inner .address {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  color: #4d4d4d;
+  margin-bottom: 3rem;
 }
 
 .pf {

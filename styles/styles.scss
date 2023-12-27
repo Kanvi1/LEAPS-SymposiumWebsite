@@ -1,5 +1,6 @@
 // $color-primary: #3d49b8;
 $color-primary: #9013fe;
+$color-bg-light: #c9d1de;
 $color-secondary: rgb(12, 29, 57);
 $color-dark: #4d4d4d;
 $color-light: #919191;
@@ -40,7 +41,8 @@ body {
 }
 
 #speakers-section {
-  background-color: rgb(201, 209, 222);
+  background-color: $color-bg-light;
+  padding-top: 10rem;
   .container {
     padding: 15rem 0rem -10rem 0rem;
     h1 {
@@ -111,7 +113,7 @@ body {
   background-color: $color-secondary;
   margin-top: -10rem;
   color: white;
-  padding: 22rem 0rem 22rem 0rem;
+  padding: 22rem 0rem 24rem 0rem;
 
   .det-row {
     &:not(:last-child) {
@@ -151,10 +153,12 @@ body {
 }
 
 #summary {
-  margin: -15rem;
+  z-index: 5;
+  position: relative;
+  margin: -16rem 0rem -16rem 0rem;
   .container {
     background-color: white;
-    padding: 5rem;
+    padding: 2rem 5rem;
 
     .summary {
       display: flex;
@@ -180,6 +184,32 @@ body {
           font-size: 3rem;
         }
       }
+    }
+  }
+}
+
+#location {
+  height: 80vh;
+  position: relative;
+  background-color: $color-bg-light;
+  z-index: 3;
+  div.img-div {
+    background-image: url('../img/BuildingImg.webp');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .inner {
+    padding: 15rem;
+    p {
+      display: block;
+    }
+
+    .address {
+      margin-top: 3rem;
+      font-size: 2.5rem;
+      color: $color-dark;
+      margin-bottom: 3rem;
     }
   }
 }
