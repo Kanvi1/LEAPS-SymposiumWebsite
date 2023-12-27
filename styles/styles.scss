@@ -111,7 +111,7 @@ body {
   background-color: $color-secondary;
   margin-top: -10rem;
   color: white;
-  padding: 22rem 0rem 5rem 0rem;
+  padding: 22rem 0rem 22rem 0rem;
 
   .det-row {
     &:not(:last-child) {
@@ -145,6 +145,40 @@ body {
         height: 100%;
         width: 3px;
         bottom: 0;
+      }
+    }
+  }
+}
+
+#summary {
+  margin: -15rem;
+  .container {
+    background-color: white;
+    padding: 5rem;
+
+    .summary {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      div.divider {
+        width: 3px;
+        border-right: 2px solid $color-primary;
+        height: 14rem;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .number {
+          font-size: 10rem;
+        }
+
+        .title {
+          color: $color-light;
+          font-size: 3rem;
+        }
       }
     }
   }

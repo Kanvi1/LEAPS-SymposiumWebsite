@@ -118,7 +118,7 @@ body {
   background-color: #0c1d39;
   margin-top: -10rem;
   color: white;
-  padding: 22rem 0rem 5rem 0rem;
+  padding: 22rem 0rem 22rem 0rem;
 }
 
 #agenda-section .det-row {
@@ -158,6 +158,54 @@ body {
   height: 100%;
   width: 3px;
   bottom: 0;
+}
+
+#summary {
+  margin: -15rem;
+}
+
+#summary .container {
+  background-color: white;
+  padding: 5rem;
+}
+
+#summary .container .summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#summary .container .summary div.divider {
+  width: 3px;
+  border-right: 2px solid #9013fe;
+  height: 14rem;
+}
+
+#summary .container .summary div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#summary .container .summary div .number {
+  font-size: 10rem;
+}
+
+#summary .container .summary div .title {
+  color: #919191;
+  font-size: 3rem;
 }
 
 .pf {
