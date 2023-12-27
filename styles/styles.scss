@@ -1,0 +1,115 @@
+// $color-primary: #3d49b8;
+$color-primary: #9013fe;
+$color-secondary: rgb(12, 29, 57);
+$color-dark: #4d4d4d;
+$color-light: #919191;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+}
+
+#hero-section {
+  display: flex;
+  padding-left: 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  align-items: center;
+  height: 80vh;
+  background-image: url('../img/stock-conference-1.jpg');
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+
+  h1 {
+    font-size: 9rem;
+    font-weight: 600;
+  }
+
+  .content {
+    width: 40%;
+  }
+
+  p.dates {
+    font-size: 5rem;
+  }
+}
+
+#speakers {
+  background-color: rgb(201, 209, 222);
+  .container {
+    padding: 15rem 0rem;
+    h1 {
+      font-weight: 500;
+      margin-bottom: 5rem;
+    }
+
+    div.speaker-card {
+      position: relative;
+
+      &:hover {
+        &::after {
+          left: 0;
+          bottom: 0;
+        }
+      }
+
+      &::after {
+        transition: all 0.2s;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: -1.5rem;
+        bottom: -1.5rem;
+        border: $color-primary 2px solid;
+      }
+
+      padding: 3rem;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5rem;
+
+      img {
+        max-width: 100%;
+      }
+
+      .speaker-details {
+        padding: 5%;
+        .speaker-name {
+          font-weight: 500;
+          font-size: 6rem;
+        }
+        .speaker-title {
+          color: $color-light;
+          font-size: 2.5rem;
+          font-weight: 400;
+          margin-bottom: 2rem;
+        }
+        .speaker-description {
+          color: darkgray;
+        }
+      }
+    }
+  }
+}
+
+.pf {
+  font-family: 'Playfair Display';
+}
+
+.btn.btn-cta {
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+div.padding {
+  height: 100vh;
+}

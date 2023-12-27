@@ -1,0 +1,120 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+}
+
+#hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  background-image: url("../img/stock-conference-1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+}
+
+#hero-section h1 {
+  font-size: 9rem;
+  font-weight: 600;
+}
+
+#hero-section .content {
+  width: 40%;
+}
+
+#hero-section p.dates {
+  font-size: 5rem;
+}
+
+#speakers {
+  background-color: #c9d1de;
+}
+
+#speakers .container {
+  padding: 15rem 0rem;
+}
+
+#speakers .container h1 {
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+#speakers .container div.speaker-card {
+  position: relative;
+  padding: 3rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+
+#speakers .container div.speaker-card:hover::after {
+  left: 0;
+  bottom: 0;
+}
+
+#speakers .container div.speaker-card::after {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: -1.5rem;
+  bottom: -1.5rem;
+  border: #9013fe 2px solid;
+}
+
+#speakers .container div.speaker-card img {
+  max-width: 100%;
+}
+
+#speakers .container div.speaker-card .speaker-details {
+  padding: 5%;
+}
+
+#speakers .container div.speaker-card .speaker-details .speaker-name {
+  font-weight: 500;
+  font-size: 6rem;
+}
+
+#speakers .container div.speaker-card .speaker-details .speaker-title {
+  color: #919191;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+#speakers .container div.speaker-card .speaker-details .speaker-description {
+  color: darkgray;
+}
+
+.pf {
+  font-family: 'Playfair Display';
+}
+
+.btn.btn-cta {
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+div.padding {
+  height: 100vh;
+}
