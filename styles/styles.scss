@@ -49,75 +49,6 @@ body {
   }
 }
 
-#speakers-section {
-  background-color: $color-bg-light;
-  padding-top: 10rem;
-  .container {
-    padding: 15rem 0rem -10rem 0rem;
-    h1 {
-      font-weight: 500;
-      margin-bottom: 5rem;
-    }
-
-    div.speaker-card {
-      position: relative;
-
-      &:hover {
-        &::after {
-          left: 0;
-          bottom: 0;
-        }
-
-        img {
-          transform: scale(1.1);
-        }
-      }
-
-      &::after {
-        transition: all 0.2s;
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        left: -1.5rem;
-        bottom: -1.5rem;
-        border: $color-primary 2px solid;
-      }
-
-      padding: 3rem;
-      background-color: white;
-      display: flex;
-      align-items: center;
-
-      &:not(:last-child) {
-        margin-bottom: 5rem;
-      }
-
-      img {
-        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-        max-width: 100%;
-      }
-
-      .speaker-details {
-        padding: 5%;
-        .speaker-name {
-          font-weight: 500;
-          font-size: 6rem;
-        }
-        .speaker-title {
-          color: $color-light;
-          font-size: 2.5rem;
-          font-weight: 400;
-          margin-bottom: 2rem;
-        }
-        .speaker-description {
-          color: darkgray;
-        }
-      }
-    }
-  }
-}
-
 #definition-section {
   background-color: $color-secondary;
   color: white;
@@ -200,7 +131,7 @@ body {
 #summary {
   z-index: 5;
   position: relative;
-  margin: -16rem 0rem -16rem 0rem;
+  margin: -15rem 0rem -13rem 0rem;
   .container {
     background-color: white;
     padding: 5rem 5rem;
@@ -265,15 +196,184 @@ body {
 }
 
 #sponsors {
-  background-color: $color-primary;
-  padding: 10rem 0rem;
+  background-color: $color-secondary;
+  padding: 10rem 0rem 15rem 0rem;
   color: white;
+
+  div.inner {
+    display: flex;
+    gap: 3rem;
+  }
+  img {
+    height: 15rem;
+  }
 }
 
-#logistics {
+#logistics-section {
   background-color: $color-bg-light;
-  padding: 10rem 0rem;
-  // color: $color-dark;
+  padding-top: 10rem;
+  padding-bottom: 30rem;
+  .container-inner {
+    padding: 0rem 12vw !important;
+    h1 {
+      font-weight: 500;
+      margin-bottom: 5rem;
+    }
+
+    div.speaker-card {
+      position: relative;
+      height: 100%;
+
+      &:hover {
+        &::after {
+          left: 0;
+          bottom: 0;
+        }
+
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      &::after {
+        transition: all 0.2s;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: -1.5rem;
+        bottom: -1.5rem;
+        border: $color-primary 2px solid;
+      }
+
+      padding: 3rem;
+      background-color: white;
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 5rem;
+      }
+
+      img {
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        max-width: 100%;
+      }
+
+      .speaker-details {
+        padding: 5%;
+        .speaker-name {
+          font-weight: 500;
+          font-size: 6rem;
+        }
+        .speaker-title {
+          color: $color-light;
+          font-size: 2.5rem;
+          font-weight: 400;
+          margin-bottom: 2rem;
+        }
+        .speaker-description {
+          // color: darkgray;
+        }
+      }
+    }
+  }
+}
+
+#register {
+  z-index: 5;
+  position: relative;
+  margin: -14rem 0rem -16rem 0rem;
+  color: white;
+  .container {
+    background-color: $color-primary;
+    padding: 5rem 5rem;
+
+    .summary {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      // div.divider {
+      //   width: 3px;
+      //   // border-right: 2px solid white;
+      //   height: 14rem;
+      // }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        .number {
+          font-size: 8rem;
+          // color: $color-primary;
+          a {
+            text-decoration: none;
+            color: unset;
+          }
+        }
+
+        .title {
+          // color: $color-light;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+#leaps {
+  background-color: $color-secondary;
+  padding-top: 10rem;
+
+  .container {
+    color: white;
+    padding-top: 18rem;
+    padding-bottom: 5rem;
+
+    a.git {
+      text-decoration: underline;
+    }
+
+    a {
+      text-decoration: none;
+      color: unset;
+
+      &:hover {
+        // color: $color-primary;
+      }
+    }
+
+    p {
+      color: $color-bg-light;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 4rem;
+      // border-bottom: $color-primary 2px solid;
+    }
+    hr {
+      border-top: 1px solid $color-light;
+    }
+
+    .icons {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      align-self: flex-end;
+
+      a {
+        margin: 0rem 1rem;
+        transition: all 0.2s;
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+  img {
+    width: 100%;
+  }
 }
 
 .pf {

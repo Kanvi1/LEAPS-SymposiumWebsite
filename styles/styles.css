@@ -39,65 +39,6 @@ body {
   font-size: 5rem;
 }
 
-#speakers-section {
-  background-color: #c9d1de;
-  padding-top: 10rem;
-}
-#speakers-section .container {
-  padding: 15rem 0rem -10rem 0rem;
-}
-#speakers-section .container h1 {
-  font-weight: 500;
-  margin-bottom: 5rem;
-}
-#speakers-section .container div.speaker-card {
-  position: relative;
-  padding: 3rem;
-  background-color: white;
-  display: flex;
-  align-items: center;
-}
-#speakers-section .container div.speaker-card:hover::after {
-  left: 0;
-  bottom: 0;
-}
-#speakers-section .container div.speaker-card:hover img {
-  transform: scale(1.1);
-}
-#speakers-section .container div.speaker-card::after {
-  transition: all 0.2s;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: -1.5rem;
-  bottom: -1.5rem;
-  border: #9013fe 2px solid;
-}
-#speakers-section .container div.speaker-card:not(:last-child) {
-  margin-bottom: 5rem;
-}
-#speakers-section .container div.speaker-card img {
-  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  max-width: 100%;
-}
-#speakers-section .container div.speaker-card .speaker-details {
-  padding: 5%;
-}
-#speakers-section .container div.speaker-card .speaker-details .speaker-name {
-  font-weight: 500;
-  font-size: 6rem;
-}
-#speakers-section .container div.speaker-card .speaker-details .speaker-title {
-  color: #919191;
-  font-size: 2.5rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-#speakers-section .container div.speaker-card .speaker-details .speaker-description {
-  color: darkgray;
-}
-
 #definition-section {
   background-color: rgb(12, 29, 57);
   color: white;
@@ -169,7 +110,7 @@ body {
 #summary {
   z-index: 5;
   position: relative;
-  margin: -16rem 0rem -16rem 0rem;
+  margin: -15rem 0rem -13rem 0rem;
 }
 #summary .container {
   background-color: white;
@@ -226,14 +167,145 @@ body {
 }
 
 #sponsors {
-  background-color: #9013fe;
-  padding: 10rem 0rem;
+  background-color: rgb(12, 29, 57);
+  padding: 10rem 0rem 15rem 0rem;
   color: white;
 }
+#sponsors div.inner {
+  display: flex;
+  gap: 3rem;
+}
+#sponsors img {
+  height: 15rem;
+}
 
-#logistics {
+#logistics-section {
   background-color: #c9d1de;
-  padding: 10rem 0rem;
+  padding-top: 10rem;
+  padding-bottom: 30rem;
+}
+#logistics-section .container-inner {
+  padding: 0rem 12vw !important;
+}
+#logistics-section .container-inner h1 {
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+#logistics-section .container-inner div.speaker-card {
+  position: relative;
+  height: 100%;
+  padding: 3rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+#logistics-section .container-inner div.speaker-card:hover::after {
+  left: 0;
+  bottom: 0;
+}
+#logistics-section .container-inner div.speaker-card:hover img {
+  transform: scale(1.1);
+}
+#logistics-section .container-inner div.speaker-card::after {
+  transition: all 0.2s;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: -1.5rem;
+  bottom: -1.5rem;
+  border: #9013fe 2px solid;
+}
+#logistics-section .container-inner div.speaker-card:not(:last-child) {
+  margin-bottom: 5rem;
+}
+#logistics-section .container-inner div.speaker-card img {
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  max-width: 100%;
+}
+#logistics-section .container-inner div.speaker-card .speaker-details {
+  padding: 5%;
+}
+#logistics-section .container-inner div.speaker-card .speaker-details .speaker-name {
+  font-weight: 500;
+  font-size: 6rem;
+}
+#logistics-section .container-inner div.speaker-card .speaker-details .speaker-title {
+  color: #919191;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+#register {
+  z-index: 5;
+  position: relative;
+  margin: -14rem 0rem -16rem 0rem;
+  color: white;
+}
+#register .container {
+  background-color: #9013fe;
+  padding: 5rem 5rem;
+}
+#register .container .summary {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#register .container .summary div {
+  display: flex;
+  flex-direction: column;
+}
+#register .container .summary div .number {
+  font-size: 8rem;
+}
+#register .container .summary div .number a {
+  text-decoration: none;
+  color: unset;
+}
+#register .container .summary div .title {
+  font-size: 2rem;
+}
+
+#leaps {
+  background-color: rgb(12, 29, 57);
+  padding-top: 10rem;
+}
+#leaps .container {
+  color: white;
+  padding-top: 18rem;
+  padding-bottom: 5rem;
+}
+#leaps .container a.git {
+  text-decoration: underline;
+}
+#leaps .container a {
+  text-decoration: none;
+  color: unset;
+}
+#leaps .container p {
+  color: #c9d1de;
+}
+#leaps .container h2 {
+  font-weight: 500;
+  font-size: 4rem;
+}
+#leaps .container hr {
+  border-top: 1px solid #919191;
+}
+#leaps .container .icons {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  align-self: flex-end;
+}
+#leaps .container .icons a {
+  margin: 0rem 1rem;
+  transition: all 0.2s;
+}
+#leaps .container .icons a:hover {
+  color: #9013fe;
+}
+#leaps img {
+  width: 100%;
 }
 
 .pf {
