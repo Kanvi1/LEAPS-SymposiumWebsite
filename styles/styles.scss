@@ -5,6 +5,15 @@ $color-secondary: rgb(12, 29, 57);
 $color-dark: #4d4d4d;
 $color-light: #919191;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ipWidget p {
+  margin: 0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -107,6 +116,11 @@ body {
       }
     }
   }
+}
+#definition-section {
+  background-color: $color-secondary;
+  color: white;
+  padding: 22rem 0rem 24rem 1rem;
 }
 
 #agenda-section {
