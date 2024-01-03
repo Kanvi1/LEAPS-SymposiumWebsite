@@ -276,6 +276,9 @@ body {
   padding-bottom: 5rem;
 }
 #leaps .container a.git {
+  color: white;
+}
+#leaps .container a.git:hover {
   text-decoration: underline;
 }
 #leaps .container a {

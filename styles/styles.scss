@@ -332,7 +332,10 @@ body {
     padding-bottom: 5rem;
 
     a.git {
-      text-decoration: underline;
+      color: white;
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     a {
