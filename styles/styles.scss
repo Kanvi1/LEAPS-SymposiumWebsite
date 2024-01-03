@@ -117,10 +117,36 @@ body {
     }
   }
 }
+
 #definition-section {
   background-color: $color-secondary;
   color: white;
-  padding: 22rem 0rem 24rem 1rem;
+  padding: 15rem 0rem 30rem 1rem;
+
+  .sub-heading {
+    font-size: 2rem;
+    // font-weight: bold;
+    color: $color-bg-light;
+  }
+
+  .main {
+    font-size: 10rem;
+    margin-bottom: 2rem;
+  }
+
+  .sub-def {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $color-bg-light;
+    margin-bottom: 3rem;
+  }
+
+  ul.defs {
+    font-size: 2rem;
+    li {
+      margin-bottom: 1.5rem;
+    }
+  }
 }
 
 #agenda-section {
@@ -177,7 +203,7 @@ body {
   margin: -16rem 0rem -16rem 0rem;
   .container {
     background-color: white;
-    padding: 2rem 5rem;
+    padding: 5rem 5rem;
 
     .summary {
       display: flex;
@@ -193,14 +219,19 @@ body {
       div {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        // align-items: center;
         .number {
-          font-size: 10rem;
+          font-size: 8rem;
+          // color: $color-primary;
+          a {
+            text-decoration: none;
+            color: unset;
+          }
         }
 
         .title {
           color: $color-light;
-          font-size: 3rem;
+          font-size: 2rem;
         }
       }
     }
@@ -237,6 +268,12 @@ body {
   background-color: $color-primary;
   padding: 10rem 0rem;
   color: white;
+}
+
+#logistics {
+  background-color: $color-bg-light;
+  padding: 10rem 0rem;
+  // color: $color-dark;
 }
 
 .pf {

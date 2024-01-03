@@ -101,7 +101,27 @@ body {
 #definition-section {
   background-color: rgb(12, 29, 57);
   color: white;
-  padding: 22rem 0rem 24rem 1rem;
+  padding: 15rem 0rem 30rem 1rem;
+}
+#definition-section .sub-heading {
+  font-size: 2rem;
+  color: #c9d1de;
+}
+#definition-section .main {
+  font-size: 10rem;
+  margin-bottom: 2rem;
+}
+#definition-section .sub-def {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #c9d1de;
+  margin-bottom: 3rem;
+}
+#definition-section ul.defs {
+  font-size: 2rem;
+}
+#definition-section ul.defs li {
+  margin-bottom: 1.5rem;
 }
 
 #agenda-section {
@@ -153,7 +173,7 @@ body {
 }
 #summary .container {
   background-color: white;
-  padding: 2rem 5rem;
+  padding: 5rem 5rem;
 }
 #summary .container .summary {
   display: flex;
@@ -168,14 +188,17 @@ body {
 #summary .container .summary div {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 #summary .container .summary div .number {
-  font-size: 10rem;
+  font-size: 8rem;
+}
+#summary .container .summary div .number a {
+  text-decoration: none;
+  color: unset;
 }
 #summary .container .summary div .title {
   color: #919191;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 #location {
@@ -206,6 +229,11 @@ body {
   background-color: #9013fe;
   padding: 10rem 0rem;
   color: white;
+}
+
+#logistics {
+  background-color: #c9d1de;
+  padding: 10rem 0rem;
 }
 
 .pf {
