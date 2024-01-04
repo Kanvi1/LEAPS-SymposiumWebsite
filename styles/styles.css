@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +20,50 @@ body {
   font-size: 1.6rem;
 }
 
+#navbar {
+  color: white;
+  padding: 2rem 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+#navbar .navbar-brand {
+  font-weight: 600;
+  font-size: 4rem;
+}
+#navbar a {
+  text-decoration: none;
+  transition: all 0.2s;
+  color: unset;
+}
+#navbar a:hover {
+  color: #00a3e0;
+}
+#navbar .navbar-nav .nav-item {
+  margin-right: 2rem;
+}
+
+#social-floater {
+  z-index: 999;
+  position: fixed;
+  right: 5rem;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: white;
+}
+#social-floater.icons {
+  font-size: 3rem;
+}
+#social-floater.icons a {
+  text-decoration: none;
+  color: unset;
+  transition: all 0.2s;
+}
+#social-floater.icons a:hover {
+  color: #00a3e0;
+}
+
 #hero-section {
   display: flex;
   padding-left: 20%;
@@ -23,7 +71,7 @@ body {
   padding-bottom: 10%;
   align-items: center;
   height: 80vh;
-  background-image: url("../img/stock-conference-1.jpg");
+  background-image: url("../img/stock-conference-2.png");
   background-size: cover;
   background-position: bottom;
   color: white;
@@ -35,12 +83,16 @@ body {
 #hero-section .content {
   width: 40%;
 }
+#hero-section .content p {
+  font-size: 2rem;
+  text-shadow: -1px 3px 2px black;
+}
 #hero-section p.dates {
   font-size: 5rem;
 }
 
 #definition-section {
-  background-color: rgb(12, 29, 57);
+  background-color: #00212d;
   color: white;
   padding: 15rem 0rem 30rem 1rem;
 }
@@ -65,48 +117,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-#agenda-section {
-  background-color: rgb(12, 29, 57);
-  margin-top: -10rem;
-  color: white;
-  padding: 22rem 0rem 24rem 0rem;
-}
-#agenda-section .det-row {
-  font-size: 3rem;
-  background-color: transparent;
-  transition: all 0.2s;
-  display: flex;
-  align-items: center;
-  padding: 4rem;
-}
-#agenda-section .det-row:hover {
-  background-color: rgba(255, 255, 255, 0.059);
-}
-#agenda-section .det-row:not(:last-child) {
-  border-bottom: 2px solid rgba(211, 211, 211, 0.259);
-}
-#agenda-section .det-row .time {
-  font-size: 3.5rem;
-  text-align: right;
-  font-weight: 700;
-  padding-right: 5rem;
-}
-#agenda-section .det-row .det {
-  color: lightgray;
-  padding-left: 3rem;
-  position: relative;
-}
-#agenda-section .det-row .det::after {
-  color: rgba(211, 211, 211, 0.259);
-  content: "";
-  border-right: 2px solid rgba(211, 211, 211, 0.259);
-  position: absolute;
-  left: -2rem;
-  height: 100%;
-  width: 3px;
-  bottom: 0;
-}
-
 #summary {
   z-index: 5;
   position: relative;
@@ -123,7 +133,7 @@ body {
 }
 #summary .container .summary div.divider {
   width: 3px;
-  border-right: 2px solid #9013fe;
+  border-right: 2px solid #00a3e0;
   height: 14rem;
 }
 #summary .container .summary div {
@@ -136,6 +146,10 @@ body {
 #summary .container .summary div .number a {
   text-decoration: none;
   color: unset;
+  transition: all 0.3s;
+}
+#summary .container .summary div .number a:hover {
+  color: #00a3e0;
 }
 #summary .container .summary div .title {
   color: #919191;
@@ -149,9 +163,12 @@ body {
   z-index: 3;
 }
 #location div.img-div {
-  background-image: url("../img/BuildingImg.webp");
+  background-image: url("../img/student_union_bw.png");
   background-position: center;
   background-size: cover;
+}
+#location img.maps-google {
+  height: 8rem;
 }
 #location .inner {
   padding: 15rem;
@@ -165,26 +182,21 @@ body {
   color: #4d4d4d;
   margin-bottom: 3rem;
 }
-
-#sponsors {
-  background-color: rgb(12, 29, 57);
-  padding: 10rem 0rem 15rem 0rem;
-  color: white;
-}
-#sponsors div.inner {
-  display: flex;
-  gap: 3rem;
-}
-#sponsors img {
-  height: 15rem;
+#location .inner .detailed {
+  font-weight: 500;
+  font-size: 1.8rem;
 }
 
 #logistics-section {
-  background-color: #c9d1de;
-  padding-top: 10rem;
+  background-color: #00212d;
+  padding-top: 13rem;
   padding-bottom: 30rem;
 }
+#logistics-section .container {
+  color: white;
+}
 #logistics-section .container-inner {
+  color: unset;
   padding: 0rem 12vw !important;
 }
 #logistics-section .container-inner h1 {
@@ -214,7 +226,7 @@ body {
   height: 100%;
   left: -1.5rem;
   bottom: -1.5rem;
-  border: #9013fe 2px solid;
+  border: #00a3e0 2px solid;
 }
 #logistics-section .container-inner div.speaker-card:not(:last-child) {
   margin-bottom: 5rem;
@@ -236,6 +248,22 @@ body {
   font-weight: 400;
   margin-bottom: 2rem;
 }
+#sponsors {
+  background-color: #c9d1de;
+  padding: 15rem 0rem 30rem 0rem;
+}
+#sponsors img.logo-onr {
+  height: 12rem;
+}
+#sponsors div.inner {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+#sponsors img {
+  height: 15rem;
+}
+
 #register {
   z-index: 5;
   position: relative;
@@ -243,7 +271,7 @@ body {
   color: white;
 }
 #register .container {
-  background-color: #9013fe;
+  background-color: #00a3e0;
   padding: 5rem 5rem;
 }
 #register .container .summary {
@@ -267,7 +295,7 @@ body {
 }
 
 #leaps {
-  background-color: rgb(12, 29, 57);
+  background-color: #00212d;
   padding-top: 10rem;
 }
 #leaps .container {
@@ -305,7 +333,7 @@ body {
   transition: all 0.2s;
 }
 #leaps .container .icons a:hover {
-  color: #9013fe;
+  color: #00a3e0;
 }
 #leaps img {
   width: 100%;

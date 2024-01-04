@@ -1,9 +1,19 @@
-// $color-primary: #3d49b8;
-$color-primary: #9013fe;
+// OG Colors: primary: 9013fe, secondary:  rgb(12, 29, 57)
+
+// LEAPS COLOR Blue: 00A3E0
+//  LEAPS Blue secondary: 00212d
+
+$color-primary: #00a3e0;
+// $color-primary: #9013fe;
 $color-bg-light: #c9d1de;
-$color-secondary: rgb(12, 29, 57);
+// $color-secondary: rgb(12, 29, 57);
+$color-secondary: #00212d;
 $color-dark: #4d4d4d;
 $color-light: #919191;
+
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -23,6 +33,60 @@ body {
   font-size: 1.6rem;
 }
 
+#navbar {
+  color: white;
+  padding: 2rem 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+
+  .navbar-brand {
+    font-weight: 600;
+    font-size: 4rem;
+  }
+  a {
+    text-decoration: none;
+    transition: all 0.2s;
+    color: unset;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin-right: 2rem;
+    }
+  }
+}
+
+#social-floater {
+  z-index: 999;
+  position: fixed;
+  right: 5rem;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items
+  gap: 3rem;
+  color: white;
+
+  &.icons {
+    // margin-bottom: 1rem;
+    font-size: 3rem;
+    // align-self: flex-end;
+
+    a {
+      // margin: 0rem 1rem;
+      text-decoration: none;
+      color: unset;
+      transition: all 0.2s;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
 #hero-section {
   display: flex;
   padding-left: 20%;
@@ -30,7 +94,7 @@ body {
   padding-bottom: 10%;
   align-items: center;
   height: 80vh;
-  background-image: url('../img/stock-conference-1.jpg');
+  background-image: url('../img/stock-conference-2.png');
   background-size: cover;
   background-position: bottom;
   color: white;
@@ -42,6 +106,10 @@ body {
 
   .content {
     width: 40%;
+    p {
+      font-size: 2rem;
+      text-shadow: -1px 3px 2px black;
+    }
   }
 
   p.dates {
@@ -80,54 +148,6 @@ body {
   }
 }
 
-#agenda-section {
-  background-color: $color-secondary;
-  margin-top: -10rem;
-  color: white;
-  padding: 22rem 0rem 24rem 0rem;
-
-  .det-row {
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.059);
-    }
-
-    &:not(:last-child) {
-      border-bottom: 2px solid rgba(211, 211, 211, 0.259);
-    }
-    font-size: 3rem;
-    background-color: transparent;
-    transition: all 0.2s;
-    display: flex;
-    align-items: center;
-    // margin-bottom: 3rem;
-    padding: 4rem;
-    .time {
-      font-size: 3.5rem;
-
-      text-align: right;
-      font-weight: 700;
-      padding-right: 5rem;
-      // border-right: 3px solid rgba(211, 211, 211, 0.466);
-    }
-    .det {
-      color: lightgray;
-      padding-left: 3rem;
-      position: relative;
-
-      &::after {
-        color: rgba(211, 211, 211, 0.259);
-        content: '';
-        border-right: 2px solid rgba(211, 211, 211, 0.259);
-        position: absolute;
-        left: -2rem;
-        height: 100%;
-        width: 3px;
-        bottom: 0;
-      }
-    }
-  }
-}
-
 #summary {
   z-index: 5;
   position: relative;
@@ -157,6 +177,10 @@ body {
           a {
             text-decoration: none;
             color: unset;
+            transition: all 0.3s;
+            &:hover {
+              color: $color-primary;
+            }
           }
         }
 
@@ -175,9 +199,13 @@ body {
   background-color: $color-bg-light;
   z-index: 3;
   div.img-div {
-    background-image: url('../img/BuildingImg.webp');
+    background-image: url('../img/student_union_bw.png');
     background-position: center;
     background-size: cover;
+  }
+
+  img.maps-google {
+    height: 8rem;
   }
 
   .inner {
@@ -189,31 +217,28 @@ body {
     .address {
       margin-top: 3rem;
       font-size: 2.5rem;
+      // font-weight: ;
       color: $color-dark;
       margin-bottom: 3rem;
+    }
+
+    .detailed {
+      font-weight: 500;
+      font-size: 1.8rem;
     }
   }
 }
 
-#sponsors {
-  background-color: $color-secondary;
-  padding: 10rem 0rem 15rem 0rem;
-  color: white;
-
-  div.inner {
-    display: flex;
-    gap: 3rem;
-  }
-  img {
-    height: 15rem;
-  }
-}
-
 #logistics-section {
-  background-color: $color-bg-light;
-  padding-top: 10rem;
+  background-color: $color-secondary;
+  .container {
+    color: white;
+  }
+  // color: white;
+  padding-top: 13rem;
   padding-bottom: 30rem;
   .container-inner {
+    color: unset;
     padding: 0rem 12vw !important;
     h1 {
       font-weight: 500;
@@ -277,6 +302,23 @@ body {
         }
       }
     }
+  }
+}
+
+#sponsors {
+  background-color: $color-bg-light;
+  padding: 15rem 0rem 30rem 0rem;
+  img.logo-onr {
+    height: 12rem;
+    // margin-right: 5rem;
+  }
+  div.inner {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  }
+  img {
+    height: 15rem;
   }
 }
 
