@@ -1,3 +1,8 @@
+@media (min-width: 1920px) and (max-width: 2560px) {
+  html {
+    font-size: 62.5%;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -12,7 +17,7 @@ html {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 body {
@@ -82,7 +87,7 @@ body {
   font-weight: 600;
 }
 #hero-section .content {
-  width: 40%;
+  width: 48%;
 }
 #hero-section .content p {
   font-size: 2rem;

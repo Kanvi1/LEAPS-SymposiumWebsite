@@ -11,6 +11,13 @@ $color-secondary: #00212d;
 $color-dark: #4d4d4d;
 $color-light: #919191;
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+  //insert styles here...
+  html {
+    font-size: 62.5%;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,7 +32,8 @@ html {
 }
 
 html {
-  font-size: 62.5%;
+  // font-size: 62.5%;
+  font-size: 50%;
 }
 
 body {
@@ -105,7 +113,7 @@ body {
   }
 
   .content {
-    width: 40%;
+    width: 48%;
     p {
       font-size: 2rem;
       text-shadow: -1px 3px 2px black;
