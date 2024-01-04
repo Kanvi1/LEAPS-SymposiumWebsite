@@ -123,6 +123,47 @@ body {
   margin-bottom: 1.5rem;
 }
 
+#agenda-section {
+  background-color: white;
+  margin-top: -10rem;
+  padding: 22rem 0rem 24rem 0rem;
+}
+#agenda-section .det-row {
+  font-size: 3rem;
+  background-color: transparent;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+}
+#agenda-section .det-row:hover {
+  background-color: rgba(255, 255, 255, 0.059);
+}
+#agenda-section .det-row:not(:last-child) {
+  border-bottom: 2px solid rgba(211, 211, 211, 0.259);
+}
+#agenda-section .det-row .time {
+  font-size: 3.5rem;
+  display: none;
+  text-align: right;
+  font-weight: 700;
+  padding-right: 5rem;
+}
+#agenda-section .det-row .det {
+  padding-left: 3rem;
+  position: relative;
+}
+#agenda-section .det-row .det::after {
+  color: rgba(211, 211, 211, 0.259);
+  content: "";
+  border-right: 2px solid rgba(211, 211, 211, 0.259);
+  position: absolute;
+  left: -2rem;
+  height: 100%;
+  width: 3px;
+  bottom: 0;
+}
+
 #summary {
   z-index: 5;
   position: relative;
