@@ -49,6 +49,7 @@ body {
   top: 30%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 3rem;
   color: white;
 }
